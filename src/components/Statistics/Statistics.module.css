@@ -1,0 +1,71 @@
+.statistics {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: 170px;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    background: #fff;
+    border-radius: 10px;
+    margin: 0 auto 20px;
+    grid-area: stats;
+}
+
+@media (min-width: 768px) {
+    .statistics {
+        display: inline-block;
+        max-width: 400px;
+    }
+}
+
+.title {
+    line-height: 100px;
+}
+
+.statList {
+    height: 70px;
+    background-color: #f0f7ff;
+    border-radius: 0 0 10px 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+.statList li {
+    display: inline-flex;
+    flex-direction: column;
+    border: 1px solid #8f8f8f20;
+    width: calc(100% / 5);
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.statList li:nth-child(1) {
+    background-color: #4dc5f7;
+    border-radius: 0 0 0 10px;
+}
+
+.statList li:nth-child(2) {
+    background-color: #a43cf3;
+}
+
+.statList li:nth-child(3) {
+    background-color: #e74c65;
+}
+
+.statList li:nth-child(4) {
+    background-color: #20b8c5;
+}
+
+.statList li:nth-child(5) {
+    background-color: #202a86;
+    border-radius: 0 0 10px;
+}
+
+.statList li span:last-child {
+    margin-top: 5px;
+    font-size: 17px;
+    font-weight: 700;
+}

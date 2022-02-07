@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--brand-color);
+  display: inline-block;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section__title {
+  margin-bottom: 50px;
+
+  font-weight: var(--font-weight-bold);
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--section-text);
+}
+
+.container {
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+@media (min-width: 620px) {
+  .container {
+    width: 620px;
+    display: grid;
+    grid-gap: 2vw;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "profile friends"
+    "stats stats"
+    "information information";
+    grid-template-rows: 400px 170px 1fr;
+    grid-template-columns: 300px 280px;
+    justify-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    grid-template-areas: 
+    "profile stats friends"
+    "profile information friends"
+    "profile information friends";
+    grid-template-rows: 170px 1fr 140px;
+    grid-template-columns: 350px 1fr 350px;
+    width: 1200px;
+  }
+}
